@@ -17,3 +17,7 @@ app.use('/post', postRoutes); // rutas para publicaciones = http://localhost:300
 app.use('/user', userRoutes); // rutas para publicaciones = http://localhost:3000/user
 
 module.exports = app;
+
+app.get('/', (req, res) => {
+  res.send('Servidor jalando al 100%');
+});
